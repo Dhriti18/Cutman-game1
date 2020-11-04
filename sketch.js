@@ -114,7 +114,7 @@ if(gameState===END){
    monsGroup.destroyEach();
    wallsGroup.destroyEach();
     grainsG.destroyEach();
-  //playS.stop();
+  playS.stop();
   fill("white");
   textSize(23);
      text("G A M E O V E R " ,200,200);
@@ -351,9 +351,9 @@ function reset(){
    createWalls();
   createMonsters();
   createGrains();
-  //playS.play();
-//playS.setVolume(0.2);
-//playS.loop();
+playS.play();
+playS.setVolume(0.2);
+playS.loop();
   
   
   r.visible=false;
